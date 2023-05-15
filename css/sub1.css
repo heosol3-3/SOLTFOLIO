@@ -229,8 +229,8 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 #portfolio .portfolio_inner button.inner_git,#portfolio .portfolio_inner button.inner_link{font-size: 0.8em;border-radius: 20px;}
 
 /* Features */
-.features {display: flex;flex-wrap: wrap;justify-content: center;width: calc(100% + 2em);margin: 0 0 3em -2em;padding: 0;list-style: none;}
-.features li {position: relative;width: calc(33.33333% - 2em);margin-left: 2em;margin: 3em 0;padding: 0;}
+.features {display: flex;flex-wrap: wrap;justify-content: center;width: calc(100% + 2em);margin: 0 ;padding: 0;list-style: none;align-items: center;}
+.features li {position: relative;width: calc(33.33333% - 2em);margin: 2.5em 0;padding: 0;}
 
 .features li>p{padding: 0 2vw;}
 
@@ -261,7 +261,7 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 .chart svg {position: absolute; top: 0; left: 0; transition: all 0.5s;}
 
 .outer.on {fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-  transition: all 0.5s; opacity: 1;  -webkit-animation-play-state: running;}
+  transition: all 0.5s; opacity: 1;}
 .outer{background-color: #f7f7f7;opacity: 0;stroke-width: 0; transition: all 1s;}
 
 /* 색지정 */
