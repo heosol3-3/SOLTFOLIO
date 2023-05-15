@@ -162,17 +162,20 @@ innerclose.forEach((el,i)=>{
 
 // 마우스 오버하면 원 등장
 
-const lis = document.querySelectorAll(".features li");
+const lis = document.querySelectorAll(".features li>span");
 console.log(lis);
+const outer = document.querySelectorAll(".outer");
+console.log(outer);
 
 for(i=0;i<lis.length;i++){
   lis[i].addEventListener("mouseover",e=>{
     e.preventDefault();
-    e.currentTarget.querySelector(".outer").classList.add("on");
+    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.lastElementChild.classList.add("on");
+    console.log();
   })
   lis[i].addEventListener("mouseleave",e=>{
     e.preventDefault();
-    e.currentTarget.querySelector(".outer").classList.remove("on");
+    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.lastElementChild.classList.remove("on");
   })
 }
 
