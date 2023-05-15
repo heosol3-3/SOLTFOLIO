@@ -203,11 +203,12 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 
 
 /* 포트폴리오 */
+
 .statistics li .portfolio_wrap{position: fixed;display: none;z-index: 10000; width: 100%;height: 100vh;background: rgba(222, 222, 222, 0.8); left: 0;top: 0;}
+.statistics li .portfolio_wrap h3{z-index: 10002;position:absolute;font-size: 1.5em;line-height: 6;font-weight: bold;width: 100%;margin: 4vh auto 0;}
 
 .statistics li .portfolio_wrap .portfolio_inner{position: absolute;width: 80vw;height: 90vh;left: 50%; top: 50%;transform: translate(-50%, -50%);padding:0 5.1vw;background: #fff; text-align: center;display: flex; flex-direction: row;justify-content: center;align-items: center; border-radius: 20px;box-shadow: 3px 3px 8px rgba(222, 222, 222, 0.9);}
 
-.statistics li .portfolio_wrap h3{z-index: 10002;position:absolute;font-size: 1.5em;line-height: 6;font-weight: bold;width: 100%;margin: 0 auto;}
 .statistics li .portfolio_wrap .portfolio_inner video{width: 60%;display: inline-block;margin-right: 5vw;}
 .statistics li .portfolio_wrap .portfolio_inner .inner_right{display: flex;flex-direction: column;margin-right: 5vw;justify-content: space-around; align-items: center;height: 35%;}
 
@@ -225,11 +226,7 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 
 .portfolio_wrap>a.inner_close{z-index: 10002;position: fixed;right: 15vw;top:10vh;color: #636363;text-decoration: none;font-weight: bold;cursor: pointer;}
 
-
-
 #portfolio .portfolio_inner button.inner_git,#portfolio .portfolio_inner button.inner_link{font-size: 0.8em;border-radius: 20px;}
-
-
 
 /* Features */
 .features {display: flex;flex-wrap: wrap;justify-content: center;width: calc(100% + 2em);margin: 0 0 3em -2em;padding: 0;list-style: none;}
@@ -596,17 +593,43 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	.spotlight .image {flex: 0 1 auto;margin-left: 0;margin-bottom: 2em;}
 
 	.statistics li strong, .statistics li b {font-size: 1em;}
-
 	.features li {width: calc(50% - 2em);}
 
-		/* 차트 */
-		.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 24.5%;top: -6.5%;transform: translateX(-50%);}
+	/* 차트 */
+	.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 24.5%;top: -6.5%;transform: translateX(-50%);}
 
-		.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-	
-		.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-			transition: stroke-dashoffset 1s; }
-		.outer{background-color: #f7f7f7; display: none;}
+	.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
+
+	.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
+		transition: stroke-dashoffset 1s; }
+	.outer{background-color: #f7f7f7; display: none;}
+
+/* 포트폴리오 */
+.statistics li .portfolio_wrap{position: fixed;display: none;z-index: 10000; width: 100%;height: 100vh;background: rgba(222, 222, 222, 0.8); left: 0;top: 0;}
+
+.statistics li .portfolio_wrap .portfolio_inner{position: absolute;width: 80vw;height: 90vh;left: 50%; top: 50%;transform: translate(-50%, -50%);padding:0 5.1vw;background: #fff; text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center; border-radius: 20px;box-shadow: 3px 3px 8px rgba(222, 222, 222, 0.9);}
+
+.statistics li .portfolio_wrap h3{z-index: 10002;position:absolute;font-size: 1.5em;line-height: 6;font-weight: bold;width: 100%;margin: 4vh auto;}
+.statistics li .portfolio_wrap .portfolio_inner video{width: 100%;display: inline-block;margin:5vh auto 0;}
+.statistics li .portfolio_wrap .portfolio_inner .inner_right{display: flex;flex-direction: column;margin-right: 5vw;justify-content: space-around; align-items: center;height: 35%;}
+
+#portfolio .inner_right>.inner_tag>span{display: inline-block; padding: 0.52vw 1.04vh;border-radius: 10px; color: #fff; font-size: 0.5em;}
+.inner_right>.inner_tag>span:nth-child(1){background: #efa8b0;}
+.inner_right>.inner_tag>span:nth-child(2){background: #8cc9f0;}
+.inner_right>.inner_tag>span:nth-child(3){background: #a89cc8;}
+.inner_right>.inner_tag>span:nth-child(4){background: #e37682;}
+.inner_right>.inner_tag>span:nth-child(5){background: #9bb2e1;}
+.inner_right>.inner_tag>span:nth-child(6){background: #c79cc8;}
+
+.statistics li .portfolio_wrap .portfolio_inner p, .statistics li .portfolio_wrap .portfolio_inner em,.statistics li .portfolio_wrap .portfolio_inner span{color: #636363; margin: 0;font-style: normal;}
+
+.portfolio_wrap>a.inner_close{z-index: 10002;position: fixed;right: 15vw;top:10vh;color: #636363;text-decoration: none;font-weight: bold;cursor: pointer;}
+
+
+
+#portfolio .portfolio_inner button.inner_git,#portfolio .portfolio_inner button.inner_link{font-size: 0.8em;border-radius: 20px;}
+
+
 	
 
 
