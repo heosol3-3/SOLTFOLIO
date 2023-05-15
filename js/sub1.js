@@ -164,8 +164,6 @@ innerclose.forEach((el,i)=>{
 
 const lis = document.querySelectorAll(".features li>span");
 console.log(lis);
-const outer = document.querySelectorAll(".outer");
-console.log(outer);
 
 for(i=0;i<lis.length;i++){
   lis[i].addEventListener("mouseover",e=>{
