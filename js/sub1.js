@@ -162,10 +162,8 @@ innerclose.forEach((el,i)=>{
 
 // 마우스 오버하면 원 등장
 
-const lis = document.querySelectorAll("#skill>.features li");
+const lis = document.querySelectorAll(".features li");
 console.log(lis);
-
-
 
 for(i=0;i<lis.length;i++){
   lis[i].addEventListener("mouseover",e=>{
@@ -177,3 +175,26 @@ for(i=0;i<lis.length;i++){
     e.currentTarget.querySelector(".outer").classList.remove("on");
   })
 }
+
+// top버튼
+
+const btntop = document.querySelector(".topbtn");
+console.log(btntop);
+
+btntop.addEventListener("click",e=>{
+  e.preventDefault();
+  window.scroll({
+    top:0,
+    left:0,
+    behavior:"smooth"
+  });
+});
+
+window.addEventListener('scroll',e=>{
+  let scrolls = document.querySelector('html').scrollTop;
+  if(scrolls==0 && scrolls<=300){
+    btntop.classList.remove("on")
+  } else if(scrolls>300){
+    btntop.classList.add("on");
+  }
+})
