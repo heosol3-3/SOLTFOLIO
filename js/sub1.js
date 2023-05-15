@@ -1,9 +1,3 @@
-/*
-Stellar by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 var	$window = $(window),
@@ -121,3 +115,65 @@ speed: 1000
 });
 
 })(jQuery);
+
+
+
+
+// 메일주소 복사
+
+const contactemail = document.querySelectorAll(".contemail");
+console.log(contactemail);
+
+for(let i=0; i<contactemail.length; i++){
+  contactemail[i].addEventListener("click",e=>{
+    e.preventDefault();
+    window.navigator.clipboard.writeText("diarysamz3@naver.com").then(() =>{
+      alert("COPY OK!");
+    })
+  })
+
+}
+
+
+// 클릭하면 열리게 하기
+
+const porta = document.querySelectorAll("#portfolio>.statistics>li>a");
+console.log(porta);
+const portinner = document.querySelector(".portfolio_wrap");
+const body = document.querySelector("body");
+const innerclose = document.querySelectorAll(".inner_close");
+
+porta.forEach((el,i)=>{
+  el.addEventListener("click",e=>{
+    e.preventDefault();
+    el.nextElementSibling.style.display = "block";
+    body.style.overflow = "hidden";
+  })
+})
+innerclose.forEach((el,i)=>{
+  el.addEventListener("click",e=>{
+    e.preventDefault();
+    porta[i].nextElementSibling.style.display = "none";
+    body.style.overflow = "auto";
+    body.style.overflowX = "hidden"
+  })
+})
+
+
+// 마우스 오버하면 원 등장
+
+const lis = document.querySelectorAll("#skill>.features li");
+console.log(lis);
+
+
+
+for(i=0;i<lis.length;i++){
+  lis[i].addEventListener("mouseover",e=>{
+    e.preventDefault();
+    e.currentTarget.querySelector(".outer").classList.add("on");
+  })
+  lis[i].addEventListener("mouseleave",e=>{
+    e.preventDefault();
+    e.currentTarget.querySelector(".outer").classList.remove("on");
+  })
+}
