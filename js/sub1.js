@@ -101,14 +101,10 @@ $this.addClass('active');
 // Otherwise, if this section's link is the one that's locked, unlock it.
 else if ($this.hasClass('active-locked'))
 $this.removeClass('active-locked');
-
 }
 });
-
 });
-
 }
-
 // Scrolly.
 $('.scrolly').scrolly({
 speed: 1000

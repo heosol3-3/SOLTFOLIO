@@ -255,13 +255,14 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 /* .features li>span>img{position: absolute;left:50%; top: 50%; height: 8.03vh;transform: translate(-50%, -50%);}  */
 
 /* 차트 */
-.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 25%;top: -4.7%;transform: translateX(-50%);}
+.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 25%;top: -4.7%;transform: translateX(-50%);transition: all 0.3s;}
 
-.chart svg {position: absolute; top: 0; left: 0;}
 
-.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-  transition: stroke-dashoffset 1s; }
-.outer{background-color: #f7f7f7; display: none;}
+.chart svg {position: absolute; top: 0; left: 0; transition: all 0.5s;}
+
+.outer.on {fill: transparent; stroke-width: 20;stroke-dasharray: 534;
+  transition: all 0.5s; opacity: 1;  -webkit-animation-play-state: running;}
+.outer{background-color: #f7f7f7;opacity: 0;stroke-width: 0; transition: all 1s;}
 
 /* 색지정 */
 #skill>.features>li:nth-child(1)>figure>svg>circle.outer.on{stroke: #e34f26;}
