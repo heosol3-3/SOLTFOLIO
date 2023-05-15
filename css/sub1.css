@@ -173,9 +173,20 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 .spotlight .content > :last-child {margin-bottom: 0;}
 .spotlight .content header.major {margin: 0 0 2em 0;}
 
+
+/* 프로필 */
+.profile{display: flex;letter-spacing: -1px;}
+
+.profile>div>h3{font-weight: 500;}
+
+.profile>div>p{line-height: 1.8;margin: 0;}
+.profile>div>p>em{font-style: normal;font-size: 1.1em;font-weight: 200;}
+.profileleft{padding-right: 1.5em;margin-right: 1.5em;border-right: 1px solid rgba(222, 222, 222, 0.5)}
+.profileleft>h3.license{margin-top: 0.7em;}
+
 .spotlight .image {display: inline-block;margin-left: 4em;padding: 0.65em;border-radius: 100%;border: solid 1px;}
 
-.spotlight .image img {display: block;border-radius: 100%;width: 15em;}
+.spotlight .image img {display: block;border-radius: 100%;width: 12em;}
 
 .spotlight .image {border-color: rgba(255, 255, 255, 0.35);}
 
