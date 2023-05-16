@@ -563,6 +563,9 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	#header.alt {	padding: 4em 2em 1em 2em ;}
 	#header.alt h1 {font-size: 2.5em;}
 
+	.profile{display: flex;flex-direction: column;;text-align: center;justify-content: center;align-items: center;}
+	.profileleft{border-right: none;padding:0;margin: 0;}
+	.profileright{padding-top: 1em;}
 	
 
 	.spotlight .image {padding: 0.35em;}
@@ -614,6 +617,10 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	#main > .main > .image.main:first-child {margin: -3em 0 1.5em -1.5em;width: calc(100% + 3em);}
 	#header {padding: 3em 1.5em 0.1em 1.5em ;}
 	#header.alt {padding: 4em 1.5em 1em 1.5em ;}
+
+	.profile{display: flex;flex-direction: column;letter-spacing: -1px;text-align: justify;justify-content: center;}
+	.profileleft{padding-right: 3.5em;margin-right: 3.5em;border-right: 1px solid rgba(222, 222, 222, 0.5)}
+
 	.statistics li:first-child {border-top-left-radius: 8px;border-top-right-radius:8px;}
 	.statistics li:nth-child(3){border-top-right-radius: 0;}
 	.statistics li:nth-child(4){border-bottom-left-radius: 0;}
