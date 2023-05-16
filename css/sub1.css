@@ -618,8 +618,10 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	#header {padding: 3em 1.5em 0.1em 1.5em ;}
 	#header.alt {padding: 4em 1.5em 1em 1.5em ;}
 
-	.profile{display: flex;flex-direction: column;letter-spacing: -1px;text-align: justify;justify-content: center;}
-	.profileleft{padding-right: 3.5em;margin-right: 3.5em;border-right: 1px solid rgba(222, 222, 222, 0.5)}
+	.profile{display: flex;flex-direction: column;;text-align: center;justify-content: center;align-items: center;}
+	.profileleft{border-right: none;padding:0;margin: 0;}
+	.profileright{padding-top: 1em;}
+	.profile>div>p{text-align: center;font-size: 1em;} 
 
 	.statistics li:first-child {border-top-left-radius: 8px;border-top-right-radius:8px;}
 	.statistics li:nth-child(3){border-top-right-radius: 0;}
@@ -627,7 +629,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	.statistics li:last-child {border-bottom-right-radius: 8px;border-bottom-left-radius:8px;}
 
 
-	.profile>div>p{text-align: justify;font-size: 1em;} 
 
 	ul.actions:not(.fixed){flex-direction: column;margin-left: 0;width: 100% !important;}
 
