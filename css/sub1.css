@@ -219,6 +219,7 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 .statistics li:nth-child(1) .port_shot{background: url(../images/samsumg.JPG) no-repeat;background-size: 100%;}
 .statistics li:nth-child(2) .port_shot{background: url(../images/cjone.JPG) no-repeat;background-size: 100%;}
 .statistics li:nth-child(3) .port_shot{background: url(../images/fescaro.JPG) no-repeat;background-size: 100%;}
+.statistics li:nth-child(4) .port_shot{background: url(../images/purecss.png) no-repeat;background-size: 100%;}
 
 
 /* 포트폴리오 */
