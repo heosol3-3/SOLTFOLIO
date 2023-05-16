@@ -266,98 +266,9 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 /* .features li>span>img{position: absolute;left:50%; top: 50%; height: 8.03vh;transform: translate(-50%, -50%);}  */
 
 /* 차트 */
-.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 25%;top: -4.7%;transform: translateX(-50%);transition: all 0.3s;}
+div.chart{position:absolute; width: 200px; height: 200px;z-index: 1;left: 50%;top: -25px;transform: translateX(-50%);transition: all 0.2s ease 0s; opacity: 0;}
 
 
-.chart svg {position: absolute; top: 0; left: 0; transition: all 0.5s;}
-
-.outer.on {fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-  transition: all 0.5s; opacity: 1;}
-.outer{background-color: #f7f7f7;opacity: 0;stroke-width: 0; transition: all 1s;}
-
-/* 색지정 */
-#skill>.features>li:nth-child(1)>figure>svg>circle.outer.on{stroke: #e34f26;}
-#skill>.features>li:nth-child(2)>figure>svg>circle.outer.on{stroke: #1572b6;}
-#skill>.features>li:nth-child(3)>figure>svg>circle.outer.on{stroke: #f7df1e;}
-#skill>.features>li:nth-child(4)>figure>svg>circle.outer.on{stroke: #00d8ff;}
-#skill>.features>li:nth-child(5)>figure>svg>circle.outer.on{stroke: #cd6799;}
-#skill>.features>li:nth-child(6)>figure>svg>circle.outer.on{stroke: #f6820c;}
-#skill>.features>li:nth-child(7)>figure>svg>circle.outer.on{stroke: #3178c6;}
-#skill>.features>li:nth-child(8)>figure>svg>circle.outer.on{stroke: #d92a2b;}
-#skill>.features>li:nth-child(9)>figure>svg>circle.outer.on{stroke: #6db33f;}
-
-
-#tool>.features>li:nth-child(1)>figure>svg>circle.outer.on{stroke: #1f9cf0;}
-#tool>.features>li:nth-child(2)>figure>svg>circle.outer.on{stroke: #a259ff;}
-#tool>.features>li:nth-child(3)>figure>svg>circle.outer.on{stroke: #ecb22e;}
-#tool>.features>li:nth-child(4)>figure>svg>circle.outer.on{stroke: #000000;}
-#tool>.features>li:nth-child(5)>figure>svg>circle.outer.on{stroke: #31a8ff;}
-#tool>.features>li:nth-child(6)>figure>svg>circle.outer.on{stroke: #ff9a00;}
-
-
-
-
-/* Set the initial values for the animation */
-.chart[data-percent='100'] .outer {
-  stroke-dashoffset: 0;
-  animation: show100 2s;
-}
-
-.chart[data-percent='75'] .outer {
-  stroke-dashoffset: 133;
-  animation: show75 2s;
-}
-
-.chart[data-percent='50'] .outer {
-  stroke-dashoffset: 267;
-  animation: show50 2s;
-}
-
-.chart[data-percent='25'] .outer {
-  stroke-dashoffset: 401;
-  animation: show25 2s;
-}
-
-@keyframes show100 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes show75 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 124;
-  }
-}
-
-@keyframes show50 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 267;
-  }
-}
-
-@keyframes show25 {
-  from {
-    stroke-dashoffset: 537;
-  }
-  
-  to {
-    stroke-dashoffset: 401;
-  }
-}
-/* END Keyframes for the initial animation */
 
 #tool>.features li:first-child>span.icon.major::before{background: url(../images/logo10.png) no-repeat 50% 50%;background-size: 60%;}
 #tool>.features li:nth-child(2)>span.icon.major::before{background: url(../images/logo11.png) no-repeat 50% 50%;background-size: 40%;}
@@ -561,15 +472,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 
 	.icon.major:before {font-size: 5.5rem;}
 
-	/* 차트 */
-	.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 20%;top: -5.5%;transform: translateX(-50%);}
-
-	.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-
-	.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-		transition: stroke-dashoffset 1s; }
-	.outer{background-color: #f7f7f7; display: none;}
-
 }
 @media screen and (max-width: 1280px) {
 
@@ -582,15 +484,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	#header.alt {padding: 6em 4em 3em 4em ;}
 	.icon.major:before {font-size: 4.75rem;}
 
-	
-	/* 차트 */
-	.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 15.5%;top: -6%;transform: translateX(-50%);}
-
-	.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-
-	.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-		transition: stroke-dashoffset 1s; }
-	.outer{background-color: #f7f7f7; display: none;}
 }
 @media screen and (max-width: 980px) {
 	#footer{padding: 4em 3em 2em 3em; display: block; margin: 0 0 3em 0;width: 100%;}
@@ -609,14 +502,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	.statistics li strong, .statistics li b {font-size: 1em;}
 	.features li {width: calc(50% - 2em);}
 
-	/* 차트 */
-	.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 24.5%;top: -6.5%;transform: translateX(-50%);}
-
-	.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-
-	.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-		transition: stroke-dashoffset 1s; }
-	.outer{background-color: #f7f7f7; display: none;}
 
 /* 포트폴리오 */
 .statistics li .portfolio_wrap{position: fixed;display: none;z-index: 10000; width: 100%;height: 100vh;background: rgba(222, 222, 222, 0.8); left: 0;top: 0;}
@@ -685,15 +570,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 
 	input[type="submit"],	input[type="reset"],	input[type="button"],	button,	.button {		min-width: 0;}
 
-			/* 차트 */
-			.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 33.3%;top: -7%;transform: translateX(-50%);}
-
-			.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-		
-			.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-				transition: stroke-dashoffset 1s; }
-			.outer{background-color: #f7f7f7; display: none;}
-
 }
 @media screen and (max-width: 480px) {
 	#wrap{max-width: calc(100% - 2em);}
@@ -714,14 +590,6 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	ul.actions:not(.fixed) li input[type="submit"],	ul.actions:not(.fixed) li input[type="reset"],	ul.actions:not(.fixed) li input[type="button"],	ul.actions:not(.fixed) li button,	ul.actions:not(.fixed) li .button {width: 100%;}
 
 	ul.actions:not(.fixed) li input[type="submit"].icon:before,	ul.actions:not(.fixed) li input[type="reset"].icon:before,	ul.actions:not(.fixed) li input[type="button"].icon:before,	ul.actions:not(.fixed) li button.icon:before,	ul.actions:not(.fixed) li .button.icon:before {margin-left: -0.5rem;}
-	/* 차트 */
-	.chart {position: absolute;display: inline-block;color: #999;font-size: 20px;text-align: center;left: 19.5%;top: -7%;transform: translateX(-50%);}
-
-	.chart svg {position: absolute; top: 50%; left: 50%;display: inline-block;width: 200px;height: 200px;}
-
-	.outer.on {display: block;fill: transparent; stroke-width: 20;stroke-dasharray: 534;
-		transition: stroke-dashoffset 1s; }
-	.outer{background-color: #f7f7f7; display: none;}
 
 }
 

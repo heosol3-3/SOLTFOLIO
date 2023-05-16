@@ -155,23 +155,190 @@ innerclose.forEach((el,i)=>{
   })
 })
 
-
-// 마우스 오버하면 원 등장
-
 const lis = document.querySelectorAll(".features li>span");
 console.log(lis);
 
-for(i=0;i<lis.length;i++){
+for(let i=0; i<lis.length; i++){
   lis[i].addEventListener("mouseover",e=>{
     e.preventDefault();
-    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.lastElementChild.classList.add("on");
-    console.log();
+    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = "1"
   })
   lis[i].addEventListener("mouseleave",e=>{
     e.preventDefault();
-    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.lastElementChild.classList.remove("on");
+    e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = "0"
   })
 }
+
+
+  // 차트(new)
+  $js('.pie1').easyPieChart({
+    barColor: '#e44f26',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie2').easyPieChart({
+    barColor: '#1572b6',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie3').easyPieChart({
+    barColor: '#f7df1e',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie4').easyPieChart({
+    barColor: '#00d8ff',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie5').easyPieChart({
+    barColor: '#cd6799',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie6').easyPieChart({
+    barColor: '#f6820c',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie7').easyPieChart({
+    barColor: '#3178c6',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie8').easyPieChart({
+    barColor: '#ea2d2e',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie9').easyPieChart({
+    barColor: '#6db33f',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+
+  // tool 차트
+  $js('.pie10').easyPieChart({
+    barColor: '#007acc',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie11').easyPieChart({
+    barColor: '#f24e1e',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie12').easyPieChart({
+    barColor: '#2eb67d',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie13').easyPieChart({
+    barColor: '#000',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie14').easyPieChart({
+    barColor: '#31a8ff',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+  $js('.pie15').easyPieChart({
+    barColor: '#ff9a00',
+    trackColor: '#fff',
+    scaleColor: '#fff',
+    lineCap: 'round',
+    lineWidth: 30,
+    size: 200,
+    animate: 1000,
+    onStart: $.noop,
+    onStop: $.noop
+  });
+
 
 // top버튼
 
