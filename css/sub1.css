@@ -133,6 +133,12 @@ body, input, select, textarea {font-size: 17pt;font-weight: 300;line-height: 1.6
 
 #main > .main > .image.main:first-child img {	border-top-right-radius: 0.25em;border-top-left-radius: 0.25em;border-bottom-right-radius: 0;border-bottom-left-radius: 0;}
 
+
+/* mobnav */
+#mobnav{display: none; opacity: 0;transition: all 0.3s ease;opacity: 0;}
+
+
+
 /* nav */
 #nav {transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;	background-color: #ffffff; color: #636363;position: absolute;width: 64em;max-width: calc(100% - 4em);padding: 1em;	background-color: #f7f7f7;	border-top-left-radius: 0.25em;	border-top-right-radius: 0.25em;cursor: default;text-align: center;}
 
@@ -555,6 +561,21 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 	#header p br {display: none;}
 	#header.alt {	padding: 4em 2em 1em 2em ;}
 	#header.alt h1 {font-size: 2.5em;}
+
+
+	/* mobnav */
+	#mobnav{position: fixed;display: block;right: 6vw;top: 3vh; opacity: 1;transition: all 0.3s ease;}
+	#mobnav>div{z-index: 9999;position: absolute;display: flex;flex-direction: column;right: 0;line-height: 2;width: 40px;height: 40px;background: rgba(239, 168, 176, 0.5);border-radius: 25px;transition: all 0.3s ease 0s;}
+	#mobnav>div.on{width: 130px;height: 310px;background: rgba(239, 168, 176, 1);}
+	#mobnav>div>p{position: absolute;left:50%;top:50%;font-size: 1.5em;margin: 0;text-align: center;cursor: pointer;transform: translate(-50%, -50%);line-height: 0.8;}
+	#mobnav>div.on>p{left: 80%;top:10%}
+	#mobnav>div>ul{position: absolute;display: none;}
+	#mobnav>div.on>ul{position: absolute;text-align: right;right: 15px;top: 6vh;display: flex;flex-direction: column;flex: 1;padding: 0;width: 100%;margin: 0;}
+	#mobnav>div>ul>li{flex: 1;font-size: 1.2em;width: 100%;padding: 0;}
+
+	#mobnav>div>ul>li>a{border-bottom: none;}
+
+
 
 	.profile{display: flex;flex-direction: column;;text-align: center;justify-content: center;align-items: center;}
 	.profileleft{border-right: none;padding:0;margin: 0;}
