@@ -124,7 +124,7 @@ for(let i=0; i<contactemail.length; i++){
   contactemail[i].addEventListener("click",e=>{
     e.preventDefault();
     window.navigator.clipboard.writeText("diarysamz3@naver.com").then(() =>{
-      alert("COPY OK!");
+      alert("'diarysamz3@gmail.com'<br /> Mail COPY OK!");
     })
   })
 

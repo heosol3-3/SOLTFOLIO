@@ -37,4 +37,4 @@ h1 { color: #fff; text-transform: uppercase; font-size: 52px; margin: 0; line-he
 .title_main:nth-child(2) {color: #1d976f;}
 .title_main:nth-child(3) {color: #d0f13c;}
 
-.fontsize{position: absolute;left: 50%;bottom: -50%;font-size: 0.8em;transform: translateX(-50%);opacity: 0.4;width: 350px;text-align: center;}
+.fontsize{position: absolute;left: 50%;bottom: -50%;font-size: 0.8em;transform: translateX(-50%);opacity: 0.4;width: 360px;text-align: center;}
