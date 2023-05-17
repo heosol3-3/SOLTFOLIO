@@ -158,16 +158,7 @@ innerclose.forEach((el,i)=>{
 const lis = document.querySelectorAll(".features li>span");
 console.log(lis);
 
-// for(let i=0; i<lis.length; i++){
-//   lis[i].addEventListener("mouseover",e=>{
-//     e.preventDefault();
-//     e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = "1"
-//   })
-//   lis[i].addEventListener("mouseleave",e=>{
-//     e.preventDefault();
-//     e.currentTarget.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = "0"
-//   })
-// }
+
 
 
   // 차트(new)

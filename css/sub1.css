@@ -539,14 +539,7 @@ input[type="submit"].primary.icon:before,input[type="reset"].primary.icon:before
 
 .portfolio_wrap>a.inner_close{z-index: 10002;position: fixed;right: 15vw;top:10vh;color: #636363;text-decoration: none;font-weight: bold;cursor: pointer;}
 
-
-
 #portfolio .portfolio_inner button.inner_git,#portfolio .portfolio_inner button.inner_link{font-size: 0.8em;border-radius: 20px;}
-
-
-	
-
-
 }
 @media screen and (max-width: 736px) {
 	
