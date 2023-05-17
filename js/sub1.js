@@ -108,93 +108,6 @@ $this.removeClass('active-locked');
 });
 }
 
-// nobNav.
-var $mobnav = $('#mobnav');
-
-if ($mobnav.length > 0) {
-
-// Shrink effect.
-$main
-.scrollex({
-mode: 'top',
-enter: function() {
-$mobnav.addClass('alt');
-},
-leave: function() {
-$mobnav.removeClass('alt');
-},
-});
-
-// Links.
-var $mobnav_a = $mobnav.find('a');
-
-$mobnav_a
-.scrolly({
-speed: 1000,
-offset: function() { return $mobnav.height(); }
-})
-.on('click', function() {
-
-var $this = $(this);
-
-
-
-// External link? Bail.
-if ($this.attr('href').charAt(0) != '#')
-return;
-
-// Deactivate all links.
-$mobnav_a
-.removeClass('active')
-.removeClass('active-locked');
-
-// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-$this
-.addClass('active')
-.addClass('active-locked');
-
-})
-.each(function() {
-
-var	$this = $(this),
-id = $this.attr('href'),
-$section = $(id);
-
-// No section for this link? Bail.
-if ($section.length < 1)
-return;
-
-// Scrollex.
-$section.scrollex({
-mode: 'middle',
-initialize: function() {
-
-// Deactivate section.
-if (browser.canUse('transition'))
-$section.addClass('inactive');
-
-},
-enter: function() {
-
-// Activate section.
-$section.removeClass('inactive');
-
-// No locked links? Deactivate all links and activate this section's one.
-if ($mobnav_a.filter('.active-locked').length == 0) {
-
-$mobnav_a.removeClass('active');
-$this.addClass('active');
-
-}
-
-// Otherwise, if this section's link is the one that's locked, unlock it.
-else if ($this.hasClass('active-locked'))
-$this.removeClass('active-locked');
-}
-});
-});
-}
-
 
 // Scrolly.
 $('.scrolly').scrolly({
@@ -436,23 +349,24 @@ btntop.addEventListener("click",e=>{
   });
 });
 
-// 모바일 햄버거 버튼
-const mobnav = document.querySelector("#mobnav");
-const mobnavdiv = document.querySelector("#mobnav>div");
-console.log(mobnav);
-mobnav.addEventListener("click",e=>{
+// 햄버거버튼
+const navmenu = document.querySelector(".navmenu");
+const nav = document.querySelector("#nav");
+
+navmenu.addEventListener("click",e=>{
   e.preventDefault();
-  e.currentTarget.classList.toggle("on");
-  mobnavdiv.classList.toggle("on");
+  nav.classList.toggle("on")
 })
 
-// window.addEventListener('scroll',e=>{
-//   let scrolls = document.querySelector('html').scrollTop;
-//   if(scrolls==0 && scrolls<=300){
-//     btntop.classList.remove("on")
-//     mobnav.classList.remove("on")
-//   } else if(scrolls>300){
-//     btntop.classList.add("on");
-//     mobnav.classList.add("on")
-//   }
-// })
+// 스크롤에따라 보이기
+
+window.addEventListener('scroll',e=>{
+  let scrolls = document.querySelector('html').scrollTop;
+  if(scrolls==0 && scrolls<=300){
+    btntop.classList.remove("on")
+    navmenu.classList.remove("on")
+  } else if(scrolls>300){
+    btntop.classList.add("on");
+    navmenu.classList.add("on");
+  }
+})
