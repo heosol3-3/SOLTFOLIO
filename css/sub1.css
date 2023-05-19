@@ -234,9 +234,22 @@ body.is-preload #header.alt .logo {transform: scale(0.8) rotate(-30deg);}
 .statistics li .portfolio_wrap h3{z-index: 10002;position:absolute;font-size: 1.5em;line-height: 6;font-weight: bold;width: 100%;margin: 4vh auto 0;}
 
 .statistics li .portfolio_wrap .portfolio_inner{position: absolute;width: 80vw;height: 90vh;left: 50%; top: 50%;transform: translate(-50%, -50%);padding:0 4.1vw;background: #fff; text-align: center;display: flex; flex-direction: row;justify-content: center;align-items: center; border-radius: 20px;box-shadow: 3px 3px 8px rgba(222, 222, 222, 0.9);}
-.statistics li .portfolio_wrap .portfolio_inner>p.inner_image{position: relative;display: inline-block;flex: 1.8;}
-.statistics li .portfolio_wrap .portfolio_inner>p.inner_image>img{width: 100%;display: inline-block;margin:0;}
-.statistics li .portfolio_wrap .portfolio_inner>p.inner_image::after{z-index: 20000;content: "";display: inline-block;position: absolute;width: 72%;height: 85%;left: 50%;top: 3%;background: url(../images/samsung.JPG) no-repeat 0% 0%;background-size: 100%;transform: translateX(-49%);border-radius: 5px; animation: ani1 10s linear infinite 0s;}
+.statistics li .portfolio_wrap .portfolio_inner>p.inner_image{position: relative;display: inline-block;flex: 1.8;margin-top: 1.5vh 0;}
+
+.statistics li .portfolio_wrap .portfolio_inner>p.inner_image>img:nth-of-type(1){width: 90%;position: relative;z-index: 30;}
+
+.statistics li .portfolio_wrap .portfolio_inner>p.inner_image>img:nth-of-type(2){width: 20%;position: absolute;z-index: 40;right: 2vw;bottom: -3vh;}
+.statistics li .portfolio_wrap .portfolio_inner>p.inner_image>img:nth-of-type(3){width: 50%;position: absolute;z-index: 40;left: 1vw;bottom: -5vh;}
+
+
+.statistics li:nth-child(1) .portfolio_wrap .portfolio_inner>p.inner_image>span{position: absolute;display: block;width: 75%;height:90%;background: url(../images/samsung.JPG) no-repeat 0% 0%; background-size: 100%;left: 50%;top: 1.5%;transform: translateX(-50%); animation: ani1 15s linear 0s infinite;}
+.statistics li:nth-child(2) .portfolio_wrap .portfolio_inner>p.inner_image>span:nth-of-type(1){position: absolute;display: block;width: 75%;height:90%;background: url(../images/cjone2.JPG) no-repeat 0% 0%; background-size: 100%;left: 50%;top: 1.5%;transform: translateX(-50%); animation: ani1 15s linear 0s infinite;}
+
+.statistics li:nth-child(2) .portfolio_wrap .portfolio_inner>p.inner_image>span:nth-of-type(2){position: absolute;display: block;width: 20%;height: 71%;z-index: 30;right: 2vw;bottom: -3vh;background: url(../images/cjone3.JPG) no-repeat 0 0; background-size: 100%;border-radius: 30px;animation: ani1 15s linear 0s infinite;}
+
+.statistics li:nth-child(2) .portfolio_wrap .portfolio_inner>p.inner_image>span:nth-of-type(3){position: absolute;z-index: 35;display: block;width: 47%;height: 55%;background: url(../images/cjone4.JPG) no-repeat 0 0; background-size: 100%;border-radius: 10px;left: 1.2vw;bottom: -3vh; animation: ani1 15s linear 0s infinite;}
+
+
 
 @keyframes ani1{
 	0%{background-position: 0% 0%;}
